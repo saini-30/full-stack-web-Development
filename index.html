@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Important Topics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>HTML Important Topics</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#structure">HTML Structure</a></li>
+            <li><a href="#text">Text Formatting</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#graphics">Graphics</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#frames">Frames</a></li>
+            <li><a href="#dhtml">DHTML & CSS</a></li>
+            <li><a href="#forms">Forms</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section: HTML Structure -->
+    <section id="structure">
+        <h2>Structure of an HTML Program</h2>
+        <p>An HTML document begins with a <code>&lt;!DOCTYPE&gt;</code> declaration followed by the <code>&lt;html&gt;</code> element, which contains <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>.</p>
+    </section>
+
+    <!-- Section: Text Formatting -->
+    <section id="text">
+        <h2>Text Formatting</h2>
+        <p><b>Bold Text</b>, <i>Italicized Text</i>, <u>Underlined Text</u></p>
+        <p>Paragraph breaks create new paragraphs:</p>
+        <p>This is a new paragraph.</p>
+        <p>Line breaks are added using the <code>&lt;br&gt;</code> tag.<br>This is a new line.</p>
+        <p>Headings use tags from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for different sizes:</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <hr>
+        <p><center>Centered text using the <code>&lt;center&gt;</code> tag.</center></p>
+    </section>
+
+    <!-- Section: Lists -->
+    <section id="lists">
+        <h2>Lists</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+        <h3>Definition List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+    </section>
+
+    <!-- Section: Graphics -->
+    <section id="graphics">
+        <h2>Adding Graphics</h2>
+        <img src="example.jpg" alt="Example Image" width="300" height="200" align="left" style="border: 2px solid #000;">
+    </section>
+
+    <!-- Section: Tables -->
+    <section id="tables">
+        <h2>Tables</h2>
+        <table border="1" width="100%" cellpadding="5" cellspacing="0" bgcolor="#f4f4f9">
+            <caption>Table Caption</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>30</td>
+                    <td>Developer</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>28</td>
+                    <td>Designer</td>
+                </tr>
+                <tr>
+                    <td colspan="3" bgcolor="#ddd">Rowspan Example</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section: Links -->
+    <section id="links">
+        <h2>Links</h2>
+        <a href="https://www.example.com" target="_blank">External Link</a>
+        <a href="#tables">Internal Link</a>
+        <a href="map.html">Image Map</a>
+    </section>
+
+    <!-- Section: Frames -->
+    <section id="frames">
+        <h2>Frames</h2>
+        <p>Use <code>&lt;frameset&gt;</code> and <code>&lt;frame&gt;</code> tags for dividing content into frames:</p>
+        <pre>&lt;frameset cols="50%,50%"&gt;
+    &lt;frame src="page1.html"&gt;
+    &lt;frame src="page2.html"&gt;
+&lt;/frameset&gt;</pre>
+    </section>
+
+    <!-- Section: DHTML & CSS -->
+    <section id="dhtml">
+        <h2>DHTML & CSS</h2>
+        <p>CSS can be added in three ways:</p>
+        <ul>
+            <li>Inline: <code>style="color: red;"</code></li>
+            <li>Internal: <code>&lt;style&gt;</code> tag in <code>&lt;head&gt;</code></li>
+            <li>External: Link to a CSS file</li>
+        </ul>
+    </section>
+
+    <!-- Section: Forms -->
+    <section id="forms">
+        <h2>Forms</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HTML Topics Guide</p>
+    </footer>
+</body>
+</html>
