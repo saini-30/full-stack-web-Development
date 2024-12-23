@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const port=3000
+const port=3001
 const app = express();
 app.use(bodyParser.json());
 app.post('/', (req, res) => {
@@ -11,4 +11,3 @@ app.post('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
-
